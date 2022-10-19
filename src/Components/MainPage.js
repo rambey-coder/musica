@@ -41,6 +41,7 @@ const MainPage = () => {
                         </div>
                       </div>
                     </div>
+
                     <div className="charts">
                         <h4>Top Charts</h4>
                         <div className="album">
@@ -51,7 +52,31 @@ const MainPage = () => {
                                 <p className="time">2:45:45</p>
                             </span>
                             <span>
-                            <i class='bx bxs-heart'></i>
+                            <i class='bx bx-heart'></i>
+                            </span>
+                        </div>
+
+                        <div className="album">
+                            <img src="/assets/golden-album.png" alt="album" />
+                            <span>
+                                <p className="music">Golden age of 80s</p>
+                                <p className="name">sean swadder</p>
+                                <p className="time">2:45:45</p>
+                            </span>
+                            <span>
+                            <i class='bx bx-heart'></i>
+                            </span>
+                        </div>
+
+                        <div className="album">
+                            <img src="/assets/golden-album.png" alt="album" />
+                            <span>
+                                <p className="music">Golden age of 80s</p>
+                                <p className="name">sean swadder</p>
+                                <p className="time">2:45:45</p>
+                            </span>
+                            <span>
+                            <i class='bx bx-heart'></i>
                             </span>
                         </div>
                     </div>
