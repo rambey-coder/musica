@@ -122,7 +122,7 @@
     gap: 3rem;
 }
 
-.charts > h4, .new-release > h4 {
+.charts > h4, .new-release > h4, .popular > h4 {
     color: #fff;
     margin-top: 0;
     font-size: 20px;
@@ -195,6 +195,7 @@
 
 .cover > img {
     width: 100%;
+    border-radius: 20px;
 }
 
 .cover > p:nth-child(2) {
@@ -207,4 +208,18 @@
     margin: 0;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.release-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.popular {
+    margin-top: 2rem;
+}
+
+.popular > .release-container{
+    flex-direction: row-reverse;
 }
