@@ -1,20 +1,20 @@
 import React from 'react'
 
 const Header = () => {
-    return (
-        <div className="header-container">
-            <div className="logo">
+  return (
+    <div className="header-container">
+            {/* <div className="logo">
                 <img src="/assets/logo.svg" alt="logo" />
-            </div>
+            </div> */}
 
             <div className="search-input">
                 <form action="">
-                    <i class='bx bx-search'></i>
+                    <i className='bx bx-search'></i>
                     <input type="text" placeholder='Search artists'/>
                 </form>
             </div>
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Header

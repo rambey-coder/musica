@@ -1,9 +1,16 @@
 import React from 'react'
+import Footer from './Footer';
 
 const MainPage = () => {
     return (
         <div className="mainpage-container">
-            <div className="side-container">
+            
+
+            <div className="content-container">
+            
+
+                <div className="top-content">
+                {/* <div className="side-container">
                 <div className="side-bar">
                     <div className="play-icon">
                         <i className="fa-solid fa-house"></i>
@@ -17,10 +24,7 @@ const MainPage = () => {
                         <i className='bx bxs-log-in'></i>
                     </div>
                 </div>
-            </div>
-
-            <div className="content-container">
-                <div className="top-content">
+            </div> */}
                     <div className="banner">
                       <div className="banner-content">
                       <div className="right-content">
@@ -30,7 +34,7 @@ const MainPage = () => {
                             <span>
                                 <img src="./assets/profile.svg" alt="" />
                                 <span>
-                                    <i class='bx bxs-heart'></i>
+                                    <i className='bx bxs-heart'></i>
                                     <p>33K Likes</p>
                                 </span>
                             </span>
@@ -52,7 +56,7 @@ const MainPage = () => {
                                 <p className="time">2:45:45</p>
                             </span>
                             <span>
-                            <i class='bx bx-heart'></i>
+                            <i className='bx bx-heart'></i>
                             </span>
                         </div>
 
@@ -64,7 +68,7 @@ const MainPage = () => {
                                 <p className="time">1:02:45</p>
                             </span>
                             <span>
-                            <i class='bx bx-heart'></i>
+                            <i className='bx bx-heart'></i>
                             </span>
                         </div>
 
@@ -76,7 +80,7 @@ const MainPage = () => {
                                 <p className="time">2:01:25</p>
                             </span>
                             <span>
-                            <i class='bx bx-heart'></i>
+                            <i className='bx bx-heart'></i>
                             </span>
                         </div>
                     </div>
@@ -190,6 +194,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

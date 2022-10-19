@@ -5,10 +5,12 @@
     flex-direction: column;
 }
 
-.header-container, .mainpage-container {
-    padding: 25px;
+.header-container {
+    padding: 25px 0;
     display: flex;
     gap: 8rem;
+    width: 90%;
+    margin: auto;
 }
 
 .search-input > form {
@@ -120,6 +122,8 @@
 .top-content {
     display: flex;
     gap: 3rem;
+    width: 90%;
+    margin: auto;
 }
 
 .charts > h4, .new-release > h4, .popular > h4 {
@@ -187,6 +191,8 @@
 
 .down-content {
     margin-top: 3rem;
+    width: 90%;
+    margin: auto;
 }
 
 .cover {
@@ -222,4 +228,18 @@
 
 .popular > .release-container{
     flex-direction: row-reverse;
+}
+
+.footer-container {
+    backdrop-filter: blur(17px) saturate(174%);
+    background-color: rgba(16, 16, 16, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.footer {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
