@@ -1,30 +1,12 @@
 import React from 'react'
-import Footer from './Footer';
+import Header from './Header';
 
 const MainPage = () => {
     return (
         <div className="mainpage-container">
-            
-
+            <Header /> 
             <div className="content-container">
-            
-
                 <div className="top-content">
-                {/* <div className="side-container">
-                <div className="side-bar">
-                    <div className="play-icon">
-                        <i className="fa-solid fa-house"></i>
-                        <i className='bx bxs-playlist'></i>
-                        <i className="fa-solid fa-radio"></i>
-                        <i className="fa-solid fa-clapperboard"></i>
-                    </div>
-
-                    <div className="profile-icon">
-                        <i className="fa-solid fa-user"></i>
-                        <i className='bx bxs-log-in'></i>
-                    </div>
-                </div>
-            </div> */}
                     <div className="banner">
                       <div className="banner-content">
                       <div className="right-content">
@@ -194,7 +176,6 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
