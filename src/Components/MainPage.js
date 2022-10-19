@@ -81,6 +81,62 @@ const MainPage = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="down-content">
+                    <div className="new-release">
+                    <h4>New releases</h4>
+                        <div className="release-container">
+                        <div className="cover">
+                            <img src="/assets/bubble.png" alt="cover" />
+                            <p>Life in a bubble</p>
+                            <p>The van</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/mountain.png" alt="cover" />
+                            <p>Mountain</p>
+                            <p>Krisx</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/limits.png" alt="cover" />
+                            <p>Limits</p>
+                            <p>John Dillon</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/everything.png" alt="cover" />
+                            <p>Everything's Black</p>
+                            <p>Ameed</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/bubble.png" alt="cover" />
+                            <p>Life in a bubble</p>
+                            <p>The van</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/cancel.png" alt="cover" />
+                            <p>Cancelled</p>
+                            <p>Enimen</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/nomod.png" alt="cover" />
+                            <p>Nomad</p>
+                            <p>Makrol ell</p>
+                        </div>
+
+                        <div className="cover">
+                            <img src="/assets/blind.png" alt="cover" />
+                            <p>Blind</p>
+                            <p>Wiz zee</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div className="popular"></div>
+                </div>
             </div>
         </div>
     )
