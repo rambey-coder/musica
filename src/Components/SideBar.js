@@ -4,19 +4,16 @@ const SideBar = () => {
     return (
         <div className="side-container">
             <div className="side-bar">
-                <div className="logo">
-                    <i className="fa-solid fa-bars-progress"></i>
+                <div className="play-icon">
+                <i class="fa-solid fa-house"></i>
+                <i class='bx bxs-playlist'></i>
+                <i class="fa-solid fa-radio"></i>
+                <i class="fa-solid fa-clapperboard"></i>
                 </div>
 
-                <div className="task-icon">
-                <i className='bx bx-home-alt-2'></i>
-                <i className='bx bx-like'></i>
-                <i className='bx bx-plus'></i>
-                <i className='bx bx-trash'></i>
-                </div>
-
-                <div className="profile-img">
-                    <img src="/assets/profile.jpg" alt="profile" />
+                <div className="profile-icon">
+                <i class="fa-solid fa-user"></i>
+                <i class='bx bxs-log-in'></i>
                 </div>
             </div>
         </div>
