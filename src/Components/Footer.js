@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
         <div className="footer">
-            <div>
+            <div className='player'>
                 <img src="/assets/seasons.png" alt="play" />
                 <span>
                     <p>Seasons in</p>
