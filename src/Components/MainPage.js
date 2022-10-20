@@ -1,7 +1,51 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import Header from './Header';
+import { TweenMax, Power3, } from 'gsap'
 
 const MainPage = () => {
+    let artist = useRef(null)
+    let headText = useRef(null)
+    let textArea = useRef(null)
+    let spanArea = useRef(null)
+    let text = useRef(null)
+
+    useEffect(() => {
+        TweenMax.fromTo(
+            artist, .5, 
+            {autoAlpha: 0, y: 1000,},
+            {autoAlpha: 1, y: 0, duration: 5, ease: Power3.easeInOut, delay: .7}
+        )
+
+        TweenMax.fromTo(
+            text, 5, 
+            {autoAlpha: 0, x: 20},
+            {autoAlpha: 1, x: 0, duration: 3, delay: .9}
+        )
+
+
+        TweenMax.to(
+            [headText, textArea],
+            {
+                'clip-path': 'polygon(0 100%, 100% 100%, 100% 0, 0 0)',
+                opacity: 1,
+                y: 0,
+                duration: 2.2
+            }
+        )
+
+        TweenMax.fromTo(
+            spanArea, .7,
+            {'clip-path': 'polygon(0% 100%, 100% 100%, 44% 100%, 9% 100%)', y: 20},
+            {
+                'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)',
+                y: 0,
+                duration: 3,
+                delay: .3,
+                ease: Power3.inOut
+            },
+        )
+    })
+
     return (
         <div className="mainpage-container">
             <Header /> 
@@ -10,10 +54,10 @@ const MainPage = () => {
                     <div className="banner">
                       <div className="banner-content">
                       <div className="right-content">
-                            <p>Currated playlist</p>
-                            <h2>R & B Hits</h2>
-                            <p> All mine, Lie again, Petty call me everyday, Out of time, No love, Bad habit, and so much more </p>
-                            <span>
+                            <p ref={el => text = el}>Currated playlist</p>
+                            <h2 ref={el => headText = el}>R & B Hits</h2>
+                            <p ref={el => textArea = el}> All mine, Lie again, Petty call me everyday, Out of time, No love, Bad habit, and so much more </p>
+                            <span ref={el => spanArea = el}>
                                 <img src="./assets/profile.svg" alt="" />
                                 <span>
                                     <i className='bx bxs-heart'></i>
@@ -23,7 +67,7 @@ const MainPage = () => {
                         </div>
 
                         <div className="left-content">
-                            <img src="/assets/artist.png" alt="artist" />
+                            <img src="/assets/artist.png" alt="artist" ref={el => artist = el}/>
                         </div>
                       </div>
                     </div>

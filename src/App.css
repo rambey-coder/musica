@@ -122,6 +122,14 @@
     font-size: 14px;
 }
 
+/* gsap style */
+.right-content > h2, .right-content > p:nth-child(3) {
+    clip-path: polygon(0, 100%,100% 100%, 100% 100%, 0% 100%);
+    transform: translateY(100px);
+    opacity: 0;
+}
+/* gsap style */
+
 .right-content > span {
     display: flex;
     align-items: center;
@@ -240,7 +248,7 @@
 }
 
 .cover {
-    width: 15%;
+    min-width: 13%;
 }
 
 .cover > img {
@@ -264,6 +272,12 @@
     display: flex;
     align-items: center;
     gap: 2rem;
+    overflow: auto;
+    scroll-snap-type: x proximity;
+}
+
+.release-container::-webkit-scrollbar {
+    width: 0;
 }
 
 .popular {
