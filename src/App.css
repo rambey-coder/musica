@@ -75,7 +75,7 @@
     border-radius: 50px;
 }
 
-.play-icon > i, .profile-icon > i {
+.icon > i, .profile-icon > i {
     font-size: 17px;
     color: #EFEEE040;
     cursor: pointer;

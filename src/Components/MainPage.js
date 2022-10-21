@@ -1,6 +1,8 @@
 import React, {useRef, useEffect} from 'react'
 import Header from './Header';
 import { TweenMax, Power3, } from 'gsap'
+import TopCharts from './TopCharts';
+import SideBar from './SideBar';
 
 const MainPage = () => {
     let artist = useRef(null)
@@ -47,6 +49,8 @@ const MainPage = () => {
     })
 
     return (
+        <div className="container">
+        <SideBar />
         <div className="mainpage-container">
             <Header /> 
             <div className="content-container">
@@ -72,7 +76,9 @@ const MainPage = () => {
                       </div>
                     </div>
 
-                    <div className="charts">
+                    <TopCharts />
+
+                    {/* <div className="charts">
                         <h4>Top Charts</h4>
                         <div className="album">
                             <img src="/assets/golden-album.png" alt="album" />
@@ -109,7 +115,7 @@ const MainPage = () => {
                             <i className='bx bx-heart'></i>
                             </span>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div className="down-content">
@@ -220,6 +226,7 @@ const MainPage = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react'
-import { gsap, TweenMax, Power3 } from 'gsap'
+import { Link } from 'react-router-dom'
+import { TweenMax, Power3 } from 'gsap'
 
 const SideBar = () => {
     let logo = useRef(null)
@@ -52,18 +53,29 @@ const SideBar = () => {
             </div>
 
         <div className="play-icon" ref={el => icons = el}>
+        <Link to='/' className="icon">
             <i className="fa-solid fa-house"
                 ref={el => icon = el}
             ></i>
+            </Link>
+
+            <Link to='/collection' className="icon">
             <i className='bx bxs-playlist'
                 ref={el => iconTwo = el}
             ></i>
+            </Link>
+
+            <Link className="icon">
             <i className="fa-solid fa-radio"
                 ref={el => iconThree = el}
             ></i>
+            </Link>
+            
+            <Link className="icon">
             <i className="fa-solid fa-clapperboard"
                 ref={el => iconFour = el}
             ></i>
+            </Link>
         </div>
 
         <div className="profile-icon">
